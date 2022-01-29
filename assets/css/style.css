@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.d-bolck{
+    display: block;
+}
+.pos-relative{
+    position: relative;
+}
+.pos-absolute{
+    position: absolute;
+}
+.con-width{
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.white-clr{
+    color:white;
+}
+.bg-color{
+    background-color:#00203FFF;
+}
+.color{
+    color:#ADEFD1FF;
+}
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2{
+    text-transform: uppercase;
+}
+.logo{
+    width:200px;
+    height:66px;
+}
+.logo-img{
+    width:100%;
+    height:100%;
+    filter: brightness(4.25);
+}
+.nav-items li a{
+    padding: 22px 24px;
+    display: block;
+    color: #ADEFD1FF;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-right:1px solid rgba(255,255,255,0.1);
+    border-left:1px solid black;
+}
+.nav-items li:first-child a{
+    border-left:none;
+}
+.nav-items li:last-child a{
+    border-right:none;
+}
+.hero{
+    background-image:url(../images/shakill.jpg);
+    height:100vh;
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
