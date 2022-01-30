@@ -80,7 +80,7 @@
     margin-top:25px;
 }
 .section-gap{
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 /*  css build class end */
@@ -108,6 +108,7 @@
     max-width:100%;
     background-size:cover;
     background-repeat: no-repeat;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .text-container{
     max-width:500px;
@@ -121,6 +122,7 @@
     display: table-cell;
     vertical-align: middle;
     z-index: 10;
+    width:600px;
 }
 .hero-h1{
     padding: 7px 0px 8px 0px;
@@ -221,4 +223,16 @@
 .download-btn span{
     text-transform: uppercase;
     color:#00203F;
+}
+.hr{
+    width: 50%;
+    margin: 0 auto;
+    height: 0.2px;
+    background-color: white;
+    margin-top: 50px;
+    opacity: 0.3;
+}
+.experience{
+    width:49%;
+    color:#ADEFD1FF;
 }
