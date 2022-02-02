@@ -104,30 +104,30 @@
     background-color: #270B71;
       
 }
-...
 .hero-img{
-    width:60%;
-    display: table;
-}
-.hero-img img{
     width:50%;
-    display: block;
-    
-    
-    
+    display: table;
+    margin-top:10rem;
 }
 .text-container{
    width:40%;
    display: table;
+   margin-top:10rem;
 }
 .main-text{
+    width: 50%;
+}
+.he-img{
+    width:75%;
+    align-items: center;
+}
+.align-middle{
     display: table-cell;
     text-align: left;
     vertical-align: middle;
-    width: 40%;
+    margin-left:auto;
+    margin-right:auto;
 }
-
-....
 .hero-h1{
     padding: 7px 0px 8px 0px;
     text-transform: uppercase;
@@ -161,6 +161,9 @@
 
 /* start about me */
 
+.about-me{
+    margin-top:8rem;
+}
 .about-heading{
     text-align: center;
 
@@ -214,15 +217,22 @@
 }
 .download-btn{
     padding: 12px 20px;
-    background-color: #ADEFD1;
+    background-color: white;
     border-radius: 25px;
+    border:2px solid white;
+    font-size:15px;
+    margin-top:6px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .download-btn:hover{
     padding: 12px 20px;
-    background-color: #ADEFD1;
+    background-color:#270B71;
     border-radius: 25px;
     opacity: 0.8;
+    color:white;
     transition: all 0.5 ease-in-out;
+      
 }
 .download-div{
     margin-top:20px;
