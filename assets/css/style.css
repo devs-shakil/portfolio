@@ -282,6 +282,30 @@
 }
 /* skill */
 .skill h2{
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.skill-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap:1.5rem;
+}
+.box{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #060656;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.skill-box .box img{
+    height:7rem;
+    text-align: center;
+}
+.skill h2{
+    font-size: 1.7rem;
+    font-weight: normal;
     text-align: center;
     text-transform: uppercase;
 }
