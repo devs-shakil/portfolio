@@ -1,3 +1,12 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:wght@600;700&family=Roboto+Condensed&family=Roboto:wght@500&display=swap');
+
+
+
+h1,h2,h3,h4,h5, p, a, span{
+    font-family: 'Roboto Condensed', sans-serif;
+}
 *{
     margin:0;
     padding:0;
@@ -25,12 +34,16 @@
 }
 .fluid-width{
     width:100%;
+    
 }
 .bg-color-1{
-    background-color:#270B71;
+    background-color:#1E1E1E;
 }
 .bg-color-2{
-    background-color: #200760;
+    background-color: #333333;
+}
+.nav-bg-color{
+    background-color: #242526;
 }
 .color{
     color:white;
@@ -79,6 +92,12 @@
 .padding-top{
     padding-top:10rem;
 }
+.pt-5rem{
+    padding-top:5rem;
+}
+.pb-5rem{
+    padding-bottom: 5rem;
+}
 .border-b{
     border-bottom: 1px solid black;
 }
@@ -107,7 +126,7 @@
 }
 /* header start */
 .hero{
-    background-color: #270B71;
+    background-color: #1E1E1E;
       
 }
 .hero-img{
@@ -129,6 +148,7 @@
 .hero-h1{
     padding: 7px 0px 8px 0px;
     text-transform: uppercase;
+    font-size: 36px;
 }
 .hero-h4{
     line-height: 29px;
@@ -166,8 +186,8 @@
     text-align: center;
 
 }
-.about-heading h1{
-    font-size: 50px;
+.about-heading h2{
+    font-size: 32px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -261,8 +281,9 @@
 .experience{
     width:49%;
 }
-.experience h1{
+.experience h2{
     padding-bottom: 23px;
+    font-size: 30px;
     text-transform: uppercase;
     
 }
@@ -284,8 +305,10 @@
 .skill h2{
     text-transform: uppercase;
     padding-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 30px;
     text-align: center;
+    font-weight: bold;
+
 }
 .skill-box{
     display: grid;
@@ -303,9 +326,11 @@
     height:7rem;
     text-align: center;
 }
-.skill h2{
-    font-size: 1.7rem;
-    font-weight: normal;
-    text-align: center;
+
+.box h3{
     text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
 }
