@@ -52,6 +52,13 @@ h1,h2,h3,h4,h5, p, a, span, i{
 .orange-color{
     color:#04E8B9;
 }
+.bdr-top{
+    border-top: 2px solid black;
+}
+.bdr-btm{
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
 .header{
     width:100%;
     display: block;
@@ -102,7 +109,7 @@ h1,h2,h3,h4,h5, p, a, span, i{
     padding-bottom: 4rem;
 }
 .padding-top{
-    padding-top:10rem;
+    padding-top:6rem;
 }
 .pt-5rem{
     padding-top:5rem;
@@ -121,6 +128,7 @@ h1,h2,h3,h4,h5, p, a, span, i{
 
 /*  css build class end */
 
+/*navbar*/
 .logo-color{
     color:#04E8B9;
 }
@@ -132,9 +140,6 @@ h1,h2,h3,h4,h5, p, a, span, i{
     border-right:1px solid rgba(255,255,255,0.1);
     border-left:1px solid black;
     cursor:pointer;
-
-
-    
 }
 .nav-items li:first-child a{
     border-left:none;
@@ -156,18 +161,59 @@ h1,h2,h3,h4,h5, p, a, span, i{
     text-transform: uppercase;
     color:white;
 }
+/*responsive*/
+.nav-res {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav-items{
+    display: none;
+}
+@media screen  and (min-width: 768px){
+    .nav-items{
+        display: flex;
+    }
+    .navbar-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-btn{
+        display: none;
+    }
+
+}
+@media screen  and (max-width: 767px) {
+    .nav-res{
+        display: flex;
+        justify-content:space-between;
+
+    }
+    .logo h2{
+        font-size: 18px;
+    }
+}
+
 /* header start */
 .hero{
     background-color: #1E1E1E;
       
 }
 .hero-img{
-    width:50%;
+    width:45%;
 
+
+}
+.hero-img img{
+    width:100%;
+    height:80%;
+    border-radius: 30px 0px;
+    border:2px solid white;
 }
 .text-container{
    width:45%;
-   margin-left:5%;
+   margin-left:10%;
     
 }
 .he-img{
@@ -182,12 +228,13 @@ h1,h2,h3,h4,h5, p, a, span, i{
     text-transform: uppercase;
     font-size: 36px;
 }
+
 .hero-h4{
     line-height: 29px;
 }
 .hero-p{
-    line-height: 28px;
-    font-size: 17px;
+    line-height: 34px;
+    font-size: 21px;
 }
 .hero-btn-1{
     margin-right:11px;

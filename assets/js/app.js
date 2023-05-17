@@ -1,6 +1,8 @@
 //primary navigation bar active and hover color
-const primaryNavs = document.querySelector("#p-navs");
-const btns = primaryNavs.querySelectorAll(".p-btn");
+const btns = document.querySelectorAll(".p-btn");
+let primaryNavs = document.querySelector('#p-navs');
+const toggleBtn = document.querySelector('.toggle-btn');
+
 for(let i=0; i<btns.length; i++){
     btns[i].addEventListener("click", function(){
         let currents= document.getElementsByClassName('active');
@@ -8,4 +10,8 @@ for(let i=0; i<btns.length; i++){
         this.className += "active";
     })
 }
-//primary navigation bar active and hover color end
+//navbar responsive
+
+toggleBtn.addEventListener('click', function(){
+    primaryNavs.classList.toggle('show')
+});
