@@ -4,7 +4,7 @@
 
 
 
-h1,h2,h3,h4,h5, p, a, span{
+h1,h2,h3,h4,h5, p, a, span, i{
     font-family: 'Roboto Condensed', sans-serif;
 }
 *{
@@ -14,6 +14,7 @@ h1,h2,h3,h4,h5, p, a, span{
     list-style-type: none;
     text-decoration: none;
     color:white;
+
 }
 .flex{
     display: flex;
@@ -49,7 +50,7 @@ h1,h2,h3,h4,h5, p, a, span{
     color:white;
 }
 .orange-color{
-    color:#E3180A;
+    color:#04E8B9;
 }
 .header{
     width:100%;
@@ -115,23 +116,24 @@ h1,h2,h3,h4,h5, p, a, span{
 .border-bottom{
     width:100px;
     margin:0 auto;
-    border:2px solid #E3180A;
+    border:2px solid #04E8B9;
 }
 
 /*  css build class end */
 
 .logo-color{
-    color:#E3180A;
+    color:#04E8B9;
 }
 .nav-items li a{
     padding: 16px 24px;
     display: block;
-    color: white;
     font-size: 19px;
     text-transform: uppercase;
     border-right:1px solid rgba(255,255,255,0.1);
     border-left:1px solid black;
     cursor:pointer;
+
+
     
 }
 .nav-items li:first-child a{
@@ -140,10 +142,15 @@ h1,h2,h3,h4,h5, p, a, span{
 .nav-items li:last-child a{
     border-right:none;
 }
-.active, .p-btn:hover{
-    background-color:#E3180A ;
-    color:white;
-    transition: all ease-in-out 0.5s;
+.active{
+    background-color:#04E8B9 ;
+    color:#333333;
+    transition: all ease-in-out 0.2s;
+}
+.p-btn:hover{
+    background-color:#04E8B9 ;
+    transition: all ease-in-out 0.2s;
+    color:#333333;
 }
 .logo h2{
     text-transform: uppercase;
@@ -184,21 +191,27 @@ h1,h2,h3,h4,h5, p, a, span{
 }
 .hero-btn-1{
     margin-right:11px;
-    background-color:#E3180A;
-    color:white;
-    font-weight: bold;
+    background-color:#04E8B9;
     border:none;
     border:2px solid white;
-}
-.hero-btn-1:hover{
-    color:white;
-    background-color:#1E1E1E; 
-    border:2px solid white;  
-    transition: all 0.8s ease;    
-}
-.hero-btn-2{
-    border:2px solid #ADEFD1FF;
+    height:53px;
     font-weight: bold;
+    font-size: 18px;
+    color:#1E1E1E;
+
+}
+
+.hero-btn-1:hover{
+    background-color:#1E1E1E;
+    color:white;
+    border:2px solid white;  
+    transition: all 0.3s ease-in-out;
+}
+.download-icon{
+    color:#1E1E1E;
+}
+.download-icon:hover{
+    color:white;
 }
 /* end hero */
 
@@ -228,7 +241,7 @@ h1,h2,h3,h4,h5, p, a, span{
     height:100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 35px 0px;
-    border: 5px solid #E3180A;
+    border: 5px solid #04E8B9;
 }
 .about-text ul h5{
     margin:5px 0 0;
@@ -260,7 +273,7 @@ h1,h2,h3,h4,h5, p, a, span{
 }
 .download-btn{
     padding: 12px 20px;
-    background-color: #E3180A;
+    background-color: #04E8B9;
     border-radius: 0px 20px;
     border:2px solid white;
     font-size:15px;
@@ -278,7 +291,7 @@ h1,h2,h3,h4,h5, p, a, span{
     border-radius: 0px 20px;
     opacity: 0.8;
     color:white;
-    transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-in-out;
       
 }
 .download-div{
@@ -315,13 +328,13 @@ h1,h2,h3,h4,h5, p, a, span{
 }
 .border-bottom-ex{
     width: 100px;
-    border: 2px solid #E3180A;
+    border: 2px solid #04E8B9;
     margin-bottom:22px;
 
 }
 .experience ul li span{
     line-height: 3rem;
-    background-color: #E3180A;
+    background-color: #04E8B9;
     padding: 6px;
     border-radius: 10px;
 }
