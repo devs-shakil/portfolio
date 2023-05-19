@@ -19,14 +19,15 @@
 
     .nav div.logo{
         margin-left: 15px;
+        width:10%;
     }
     .logo-color{
         display: none;
     }
     .nav div.main_list{
-        width: 100%;
+        width: 75%;
         margin-top: 65px;
-        height: 0px;
+        height: 0;
         overflow: hidden;
     }
 
@@ -68,5 +69,21 @@
 
     .nav div.media_button{
         display: block;
+        width:10%;
+    }
+
+    .hero-img{
+        width:100%;
+
+    }
+    .text-container{
+        width:100%;
+        margin-bottom: 50px;
+    }
+    .con-width{
+        flex-direction: column-reverse;
+    }
+    .section-gap{
+        padding-bottom: 2rem;
     }
 }
