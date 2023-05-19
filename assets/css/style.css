@@ -125,76 +125,152 @@ h1,h2,h3,h4,h5, p, a, span, i{
     margin:0 auto;
     border:2px solid #04E8B9;
 }
-
-/*  css build class end */
-
-/*navbar*/
-.logo-color{
-    color:#04E8B9;
-}
-.nav-items li a{
-    padding: 16px 24px;
-    display: block;
-    font-size: 19px;
-    text-transform: uppercase;
-    border-right:1px solid rgba(255,255,255,0.1);
-    border-left:1px solid black;
-    cursor:pointer;
-}
-.nav-items li:first-child a{
-    border-left:none;
-}
-.nav-items li:last-child a{
-    border-right:none;
-}
+/*navigation bar start*/
 .active{
     background-color:#04E8B9 ;
     color:#333333;
     transition: all ease-in-out 0.2s;
 }
-.p-btn:hover{
+.nav{
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: #242526;
+}
+
+.nav div.logo{
+    width: 17%;
+    height: 10px;
+    position: absolute;
+}
+.logo-color {
+    color: #04E8B9;
+}
+.nav div.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.nav div.logo a:hover {
+    color: #c0c0c0;
+}
+
+.nav div.main_list{
+    width: 600px;
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul{
+    width:100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+}
+
+.nav div.main_list ul li{
+    width: 120px;
+    height: 65px;
+    border-right:1px solid rgba(255,255,255,0.1);
+    border-left:1px solid black;
+}
+
+.nav div.main_list ul li:nth-child(1) {
+    border-left:none;
+}
+.nav div.main_list ul li:nth-child(6) {
+    border-right:none;
+}
+
+.nav div.main_list ul li a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    text-transform: uppercase;
+
+}
+
+.nav div.main_list ul li:hover{
     background-color:#04E8B9 ;
     transition: all ease-in-out 0.2s;
-    color:#333333;
+    color:#242526;
 }
-.logo h2{
-    text-transform: uppercase;
-    color:white;
+.active{
+    background-color:#04E8B9 ;
+    color:#242526;
+    transition: all ease-in-out 0.2s;
 }
-/*responsive*/
-.nav-res {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-.nav-items{
+.nav div.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 12px;
     display: none;
 }
-@media screen  and (min-width: 768px){
-    .nav-items{
-        display: flex;
-    }
-    .navbar-header{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .toggle-btn{
-        display: none;
-    }
 
-}
-@media screen  and (max-width: 767px) {
-    .nav-res{
-        display: flex;
-        justify-content:space-between;
-
-    }
-    .logo h2{
-        font-size: 18px;
-    }
+.nav div.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;;
+    outline: 0;
+    border: none;
+    cursor: pointer;
 }
 
+.nav div.media_button button.main_media_button span{
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
 /* header start */
 .hero{
     background-color: #1E1E1E;
