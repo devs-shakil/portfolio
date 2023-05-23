@@ -79,6 +79,7 @@
     .text-container{
         width:100%;
         margin-bottom: 50px;
+        margin-left:0;
     }
     .con-width{
         flex-direction: column-reverse;
