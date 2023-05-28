@@ -87,4 +87,15 @@
     .section-gap{
         padding-bottom: 2rem;
     }
+    .con-width{
+        width:85%;
+    }
+    .about-text{
+        width:100%;
+        padding:15px;
+    }
+    .about-img{
+        max-width:100%;
+        padding-top:20px;
+    }
 }

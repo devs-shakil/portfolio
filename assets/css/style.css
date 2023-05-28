@@ -109,7 +109,7 @@ h1,h2,h3,h4,h5, p, a, span, i{
     padding-bottom: 4rem;
 }
 .padding-top{
-    padding-top:6rem;
+    padding-top:9rem;
 }
 .pt-5rem{
     padding-top:5rem;
@@ -213,7 +213,7 @@ h1,h2,h3,h4,h5, p, a, span, i{
 }
 
 .nav div.media_button button.main_media_button {
-    width: 100%;
+    width: 80%;
     height: 100%;
     background-color: transparent;;
     outline: 0;
@@ -341,14 +341,14 @@ h1,h2,h3,h4,h5, p, a, span, i{
 /* start about me */
 
 .about-me{
-    padding-top:8rem;
+    padding-top:5rem;
 }
 .about-heading{
     text-align: center;
 
 }
 .about-heading p{
-    padding:10px;
+    line-height: 26px;
     margin-top:20px;
     
 }
@@ -388,11 +388,45 @@ h1,h2,h3,h4,h5, p, a, span, i{
 .about-text{
     width:28%;
     margin-left:2%;
-    display: table;
+    /* display: table; */
+    
 }
 .about-text ul{
     display: table-cell;
-    vertical-align: middle;
+    /* vertical-align: middle; */
+}
+.touch-me-box{
+    padding: 5px;
+    border-radius: 0.5rem;
+    background-color: #242526;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width:90%;
+    height:100%;
+}
+.about-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 2fr));
+    gap:1rem;
+    padding-top:15px;
+   
+}
+.about-box img{
+    height:60px;
+    width:60px;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin:0 auto;
+    display:block;
+    
+    
+}
+.about-container h2{
+    text-align: center;
+    font-size: 28px;
+    font-style: italic;
+    padding-bottom:15px;
+
+
 }
 .download-btn{
     padding: 12px 20px;
