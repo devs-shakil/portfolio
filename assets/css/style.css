@@ -535,5 +535,24 @@ h1,h2,h3,h4,h5, p, a, span, i{
     text-align: center;
     font-weight: bold;
 }
+.skill-heading{
+    padding:1.5rem 0;
+}
+/* end of  */
 
-/* My work css start */
+/* My project css start */
+
+.project-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap:1.5rem;
+    margin: 2rem 0;
+}
+.project-box{
+    height:28rem;
+    /* position: relative; */
+    background-color: green;
+    overflow: hidden;
+}
+
+/* My project css end */
