@@ -144,6 +144,7 @@ h1,h2,h3,h4,h5, p, a, span, i{
 .nav div.logo{
     width: 17%;
     height: 10px;
+   
     
 }
 .logo-color {
@@ -202,11 +203,14 @@ h1,h2,h3,h4,h5, p, a, span, i{
     transition: all ease-in-out 0.2s;
     color:#242526;
 }
-.active{
+.show_list{
     background-color:#04E8B9 ;
     color:#242526;
     transition: all ease-in-out 0.2s;
 }
+.nav-link {
+    transition: all 0.3s ease-in-out;
+  }
 .nav div.media_button {
     width: 40px;
     height: 40px;
@@ -216,13 +220,12 @@ h1,h2,h3,h4,h5, p, a, span, i{
     top: 12px;
     display: none;
 }
-.nav-link {
-    transition: all 0.3s ease-in-out;
-  }
+
+
 .nav div.media_button button.main_media_button {
     width: 80%;
     height: 100%;
-    background-color: transparent;;
+    background-color: transparent;
     outline: 0;
     border: none;
     cursor: pointer;
@@ -235,6 +238,7 @@ h1,h2,h3,h4,h5, p, a, span, i{
     background-color: #fff;
     margin-top: 9px;
     margin-bottom: 10px;
+    color:white;
 }
 
 .nav div.media_button button.main_media_button:hover span:nth-of-type(1){

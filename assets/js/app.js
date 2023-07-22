@@ -3,7 +3,7 @@ const btns = document.querySelectorAll(".main_list li");
 let mainListDiv = document.getElementById("mainListDiv"),
     mediaButton = document.getElementById("mediaButton");
 
-
+    console.log(btns)
 for(let i=0; i<btns.length; i++){
     btns[i].addEventListener("click", function(){
         let currents = document.getElementsByClassName('active');
@@ -47,32 +47,18 @@ navigationButtons.forEach((button) => {
 
 
 //email send
-document.getElementById('emailForm').addEventListener('submit', function (event) {
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
+    // Get form values
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
-    // Send the form data to the server using AJAX
-    const xhr = new XMLHttpRequest();
-    const url = 'send_email.php'; // Replace 'send_email.php' with your server-side script URL
-    xhr.open('POST', url, true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    // Compose the mailto URL
+    const mailtoUrl = `mailto:shakil.info82@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(name)}%0D%0AEmail:%20${encodeURIComponent(email)}%0D%0AMessage:%20${encodeURIComponent(message)}`;
 
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                document.getElementById('responseMessage').textContent = 'Email sent successfully.';
-            } else {
-                document.getElementById('responseMessage').textContent = 'Failed to send email.';
-            }
-        }
-    };
-
-    xhr.send('name=' + encodeURIComponent(name) +
-        '&email=' + encodeURIComponent(email) +
-        '&subject=' + encodeURIComponent(subject) +
-        '&message=' + encodeURIComponent(message));
-});
+    // Open the default email client
+    window.location.href = mailtoUrl;
+  });

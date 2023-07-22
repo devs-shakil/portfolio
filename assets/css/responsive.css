@@ -33,6 +33,7 @@
 
     .nav div.show_list{
         height:250px;
+       
     }
 
     .nav div.main_list ul{
@@ -97,5 +98,12 @@
     .about-img{
         max-width:100%;
         padding-top:20px;
+    }
+    .input-box input{
+        width:100%;
+        font-size: 16px;
+    }
+    .form textarea{
+        font-size: 16px;
     }
 }
