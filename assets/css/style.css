@@ -137,11 +137,14 @@ h1,h2,h3,h4,h5, p, a, span, i{
     text-align: center;
     background-color: #242526;
 }
-
+.container{
+    display: flex;
+    justify-content: space-between;
+}
 .nav div.logo{
     width: 17%;
     height: 10px;
-    position: absolute;
+    
 }
 .logo-color {
     color: #04E8B9;
@@ -160,7 +163,7 @@ h1,h2,h3,h4,h5, p, a, span, i{
 .nav div.main_list{
     width: 600px;
     height: 65px;
-    float: right;
+   
 }
 
 .nav div.main_list ul{
@@ -175,12 +178,13 @@ h1,h2,h3,h4,h5, p, a, span, i{
     height: 65px;
     border-right:1px solid rgba(255,255,255,0.1);
     border-left:1px solid black;
+    display: inline-block;
 }
 
 .nav div.main_list ul li:nth-child(1) {
     border-left:none;
 }
-.nav div.main_list ul li:nth-child(6) {
+.nav div.main_list ul li:nth-child(5) {
     border-right:none;
 }
 
@@ -189,6 +193,7 @@ h1,h2,h3,h4,h5, p, a, span, i{
     color: #fff;
     line-height: 65px;
     text-transform: uppercase;
+    padding: 65px 10px;
 
 }
 
@@ -211,7 +216,9 @@ h1,h2,h3,h4,h5, p, a, span, i{
     top: 12px;
     display: none;
 }
-
+.nav-link {
+    transition: all 0.3s ease-in-out;
+  }
 .nav div.media_button button.main_media_button {
     width: 80%;
     height: 100%;
@@ -585,8 +592,8 @@ h1,h2,h3,h4,h5, p, a, span, i{
 .project-details .btn-group .btnProject{
     padding:5px 10px;
     font-size: 15px;
-    background-color: #00CCC9;
-    color:#000;
+    background-color: #04E8B9;
+    color:#1E1E1E;
     text-transform: capitalize;
     border:1px solid transparent;
     border-radius: 4px;
@@ -601,8 +608,8 @@ h1,h2,h3,h4,h5, p, a, span, i{
     text-transform: none;
     margin:10px 4px;
     width:49%;
-    background: #04E8B9;
-    color:#00203F;
+    background: #1E1E1E;
+    color:white;
     outline:none;
     border:none;
     border-radius: 6px;
@@ -615,11 +622,11 @@ h1,h2,h3,h4,h5, p, a, span, i{
     border-radius: 0.7rem;
     outline: none;
     border: none;
-    background-color: #04E8B9;
+    background-color: #1E1E1E;
     font-size: 1.6rem;
     padding:1.2rem 1.8rem;
     margin:10px 4px;
-    color:#00203F;
+    color:white;
 
 }
 .form .form-btn{

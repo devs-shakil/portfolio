@@ -14,18 +14,17 @@
     <header class="nav-bg-color header overflowX overflowY border-b">
 
         <nav class="nav con-width">
-            <div class="container">
+            <div class="container ">
                 <div class="logo">
-                    <a href="#"><h2> Shakil <span class="logo-color">Hossain</span></h2></a>
+                    <a href="/"><h2> Shakil <span class="logo-color">Hossain</span></h2></a>
                 </div>
                 <div class="main_list" id="mainListDiv">
                     <ul>
-                        <li class="active"><a href="#">Home</a></li>
-                        <li class=" "><a href="#">About</a></li>
-                        <li class=" "><a href="#">portfolio</a></li>
-                        <li class=" "><a href="#">reviews</a></li>
-                        <li class=" "><a href="#">blog</a></li>
-                        <li class=" "><a href="#">contact</a></li>
+                        <li class="active"><a href="#hero" class="nav-link">Home</a></li>
+                        <li class=" "><a href="#aboutMe"  class="nav-link">About</a></li>
+                        <li class=" "><a href="#portfolio" class="nav-link">portfolio</a></li>
+                        <li class=" "><a href="#skill" class="nav-link">Skill</a></li>
+                        <li class=" "><a href="#contact" class="nav-link">contact</a></li>
                     </ul>
                 </div>
                 <div class="media_button">
@@ -40,30 +39,32 @@
 
 
     </header>
-    <div class="hero bg-color-1 overflowX section-gap flex padding-top bdr-btm">
-        <div class="con-width flex">
-            <div class="hero-img ">
-                <img class="align-middle he-img" src="./assets/images/heroimg.jpg" alt="">
+    <section  id="hero">
+        <div class="hero bg-color-1 overflowX section-gap flex padding-top bdr-btm">
+            <div class="con-width flex">
+                <div class="hero-img ">
+                    <img class="align-middle he-img" src="./assets/images/heroimg.jpg" alt="">
+                </div>
+                <div class="text-container">
+                        <div class="main-text align-middle">
+                            <h4 class="color hero-h4" >HI THERE !</h4>
+                            <h1 class="color hero-h1" >I'M Front-end Developer</h1>
+                            <p class="color hero-p">I'm a Freelance  Front-end Developer based in Dhaka, Bangladesh. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design. </p>
+                                <div class="flex hero-btn">
+                                    <a href="https://drive.google.com/file/d/115VZzC6hfrGe9RVfgc-ENlRPZCIO1Agt/view" class="btn bg-color hero-btn-1">
+                                        <i class="fa fa-download download-icon"></i>
+                                        Download Resume
+                                    </a>
+                                </div>
+                        </div>
+                </div>
             </div>
-            <div class="text-container">
-                    <div class="main-text align-middle">
-                         <h4 class="color hero-h4" >HI THERE !</h4>
-                        <h1 class="color hero-h1" >I'M Front-end Developer</h1>
-                        <p class="color hero-p">I'm a Freelance  Front-end Developer based in Dhaka, Bangladesh. I strives to build immersive and beautiful web applications through carefully crafted code and user-centric design. </p>
-                            <div class="flex hero-btn">
-                                <a href="#" class="btn bg-color hero-btn-1">
-                                    <i class="fa fa-download download-icon"></i>
-                                    Download Resume
-                                </a>
-                            </div>
-                    </div>
-             </div>
         </div>
-    </div>
+    </section>
 
          <!-- aboutme main section start -->
-        <section id="aboutme-main-section " class="bdr-top">
-            <section class="fluid-width bg-color-2 about-me ">
+        <section id="aboutMe" class="bdr-top fluid-width bg-color-2 about-me "  >
+           
                 <div class="about-heading section-gap con-width">
                     <h2 class="color section-heading">about <span class="orange-color">me</span></h2>
                     <div class="border-bottom"></div>
@@ -93,22 +94,22 @@
                             <h2>Touch Me</h2>
                             <div class="about-box">
                                 <div class="touch-me-box">
-                                    <a href="https://github.com/shakilwebmaster" target="_blank"> <img src="./assets/images/github.png" alt=""></a>
+                                    <a target="_blank" href="https://github.com/shakilwebmaster" target="_blank"> <img src="./assets/images/github.png" alt=""></a>
                                 </div>
                                 <div class="touch-me-box">
-                                    <a href=""> <img src="./assets/images/phone.png" alt=""></a>
+                                    <a target="_blank" href="tel:01780783657"> <img src="./assets/images/phone.png" alt=""></a>
                                 </div>
                                 <div class="touch-me-box">
-                                    <a href=""> <img src="./assets/images/gmail.png" alt=""></a>
+                                    <a target="_blank" href="mail.google.com/"> <img src="./assets/images/gmail.png" alt=""></a>
                                 </div>
                                 <div class="touch-me-box">
-                                    <a href=""><img src="./assets/images/linkedin.png" alt=""></a>
+                                    <a target="_blank" href=""><img src="./assets/images/linkedin.png" alt=""></a>
                                 </div>
                                 <div class="touch-me-box">
-                                    <a href=""><img src="./assets/images/fiverr.png" alt=""></a>
+                                    <a target="_blank" href="https://www.fiverr.com/shakil1530"><img src="./assets/images/fiverr.png" alt=""></a>
                                 </div>
                                 <div class="touch-me-box">
-                                    <a href=""><img src="./assets/images/facebook.png" alt=""></a>
+                                    <a target="_blank" href="https://www.facebook.com/shakil.programmer"><img src="./assets/images/facebook.png" alt=""></a>
                                 </div>
                                           
                                 
@@ -116,12 +117,11 @@
                         </div>
                     </div>
                  </div>
-                
-            </section>
+        </section>
              <!-- about me section end -->
             
              <!-- experience and education section start -->
-             <section class="bg-color-1">
+             <section class="bg-color-1" id="education-traning">
                 <div class="fluid-width section-gap pt-5rem ">
                     <div class="ExAndEdu d-grid con-width">
         
@@ -174,7 +174,7 @@
             <!-- experience and education section end -->
         
              <!-- Skill section start-->
-             <section class="bg-color-2 pt-5rem pb-5rem">
+             <section class="bg-color-2 pt-5rem pb-5rem" id="skill">
                 <div class="con-width skill ">
                     <h2 class="section-heading">I have experience with these <span class="orange-color">technologies</span></h2>
                     <div class="border-bottom"></div>
@@ -247,20 +247,24 @@
                                 <img src="./assets/images/adobe-photoshop.png" alt="">
                                 <h3>Photoshop</h3>
                             </div>
+                            <div class="box">
+                                <img src="./assets/images/postman.png" alt="">
+                                <h3>Postman</h3>
+                            </div>
                         </div>
                         <h2 class="skill-heading">Basic Knowledge:</h2>
                         <div class="skill-box">
                             <div class="box">
                                 <img src="./assets/images/wordpress.png" alt="">
-                                <h3>Git</h3>
+                                <h3>Wordpress</h3>
                             </div>
                             <div class="box">
                                 <img src="./assets/images/php.png" alt="">
-                                <h3>Github</h3>
+                                <h3>PHP</h3>
                             </div>
                             <div class="box">
                                 <img src="./assets/images/jquery.png" alt="">
-                                <h3>NPM</h3>
+                                <h3>jquery</h3>
                             </div>
                         </div>
                     </div>
@@ -271,7 +275,7 @@
              </section>
 
              <!-- my project section -->
-             <section class="bg-color-1 pt-5rem pb-5rem">
+             <section class="bg-color-1 pt-5rem pb-5rem" id="portfolio">
                 <div class="con-width">
                     <h2 class="section-heading">My <span class="orange-color">Project</span></h2>
                     <div class="projects-content">
@@ -311,33 +315,45 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="project">
+                            <div class="project-img">
+                                <img src="./assets//images/tmart.png" alt="">
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">T Mart</h3>
+                                <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quam dolorem deleniti unde explicabo, asperiores corporis inventore veniam voluptatem quae id delectus, incidunt ex harum amet, placeat obcaecati? Ratione, deleniti.</p>
+                                <div class="btn-group">
+                                    <a target="_blank" href="https://tmart-website.vercel.app/" class="btnProject">view project</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
              </section>
-        </section>
+        
          <!-- aboutme main  section end -->
 
-         <!-contact section-  -->
+         <!-- <!-contact section-  -->
          
-         <section class="bg-color-1 pt-5rem pb-5rem">
+         <section class="bg-color-2 pt-5rem pb-5rem" id="contact">
             <div class="con-width">
                 <h2 class="section-heading">Contact with <span class="orange-color">Me</span></h2>
-                <form action="" class="form">
+                <form action="" class="form" id="emailForm">
                     <div class="input-box">
-                        <input type="text" placeholder="Enter Your Name">
-                        <input type="text" placeholder="Enter Your Subject">
+                        <input type="text" id="name" placeholder="Enter Your Name">
+                        <input type="text" id="subject" placeholder="Enter Your Subject">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Enter Your Email">
+                        <input type="text" id="email" placeholder="Enter Your Email">
                     </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-                    <input type="submit" value="Send Message" class="form-btn">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Enter Your Message" ></textarea>
+                    <input type="submit" id="submit" value="Send Message" class="form-btn">
                 </form>
             </div>
         </section>
 
         <!-- footer -->
-        <footer class="bg-color-2 footer">
+        <footer class="bg-color-1 footer">
             <div class="con-width">
                 <p class="copyright">Copyright &#169; Shakil Hossain</p>
             </div>
